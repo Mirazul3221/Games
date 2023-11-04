@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <img class="bard" id="bard-01" src="./bard-image/frame-1d-removebg-preview.png" alt="">
+  <div class="message">
+    Enter to start game <p><span style="color:red;">&uarr;</span> Arrow up to start</p>
+  </div>
+  <div class="score">
+    <span class="score-title"></span>
+    <span class="score-value"></span>
+    <div class="pipe"></div>
+    <div class="props">sdfh</div>
+  </div>
+
+  <style>
+    * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .background {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("./bard-image/sunset-background-4796434-3992783.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+    }
+
+    .bard {
+      position: fixed;
+      width: 100px;
+      top: 40vh;
+      left: 30vw;
+    }
+
+    .pipe {
+      position: fixed;
+      top: 48vh;
+      left: 80vw;
+      height: 70vh;
+      width: 6vw;
+      background: #29bc4b;
+    }
+
+    .message {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .messgeStyle {
+      background-color: azure;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+
+    .score {
+      position: fixed;
+      z-index: 10;
+      height: 10vh;
+      top: 0px;
+      left: 0px;
+      font-size: 10vh;
+      color: white;
+    }
+
+    .score-value {
+      color: gold;
+      font-weight: bold;
+    }
+
+    .props {
+      position: fixed;
+      left: 407px;
+      top: 108px;
+    }
+  </style>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
